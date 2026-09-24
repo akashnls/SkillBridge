@@ -1,0 +1,24 @@
+{
+  "name": "skillbridge-platform",
+  "version": "1.0.0",
+  "description": "SkillBridge: An AI-Powered Job and Skill Matching Platform for Reducing Youth Unemployment and Skill Mismatch",
+  "scripts": {
+    "dev": "concurrently -n backend,frontend -c blue,green \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build": "cd backend && npm run build && cd ../frontend && npm run build",
+    "seed": "cd backend && npm run seed"
+  },
+  "keywords": [
+    "ai-job-matching",
+    "skill-gap-analysis",
+    "micro-credentials",
+    "mock-interview",
+    "explainable-ai"
+  ],
+  "author": "SkillBridge Team",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^10.0.5"
+  }
+}
